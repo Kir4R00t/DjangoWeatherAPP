@@ -2,6 +2,7 @@ from django.shortcuts import render
 from .forms import CityForm
 from .utils import get_weather_data  # Import your get_weather_data function
 
+
 def weather(request):
     if request.method == 'POST':
         form = CityForm(request.POST)
