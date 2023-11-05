@@ -5,8 +5,8 @@ import requests
 
 
 def get_weather_data(city_name):
-    load_dotenv('/OpenWeatherAPI/.env')
-    API_KEY = '442d1f0eb9f7ace9960cd10b740fa8ba'
+    load_dotenv('.env')
+    API_KEY = os.getenv('TOKEN')
     URL = "https://api.openweathermap.org/data/2.5/weather?"
     request_url = URL + f"q={city_name}&units=metric&appid={API_KEY}"
 
