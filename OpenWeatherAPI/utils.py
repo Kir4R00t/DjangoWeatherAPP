@@ -1,4 +1,3 @@
-# In your utils.py
 import os
 from dotenv import load_dotenv
 import requests
