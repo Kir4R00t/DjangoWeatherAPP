@@ -2,7 +2,7 @@
 @import url(https://cdnjs.cloudflare.com/ajax/libs/weather-icons/1.2/css/weather-icons.min.css);
 
 body {
-  background: linear-gradient(90deg, #7474BF 10%, #348AC7 90%);
+  background: green;
 }
 #weather_wrapper{
   width: 400px;
