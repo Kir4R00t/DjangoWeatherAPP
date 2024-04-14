@@ -3,7 +3,7 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <link rel="stylesheet" type="text/css" href="{% static 'style.css' %}">
+        <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
         <title>Weather app</title>
     </head>
     <body>
@@ -22,7 +22,6 @@
                         </span>
                         <span class="wind">
                             {% if wind_speed %}{{ wind_speed }} m/s{% else %}No data{% endif %}
-                            <?php?>
                         </span>
                     </div>
                 </div>

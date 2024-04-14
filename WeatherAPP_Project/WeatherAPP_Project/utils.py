@@ -9,10 +9,11 @@ def get_weather_data(city_name):
     URL = "https://api.openweathermap.org/data/2.5/weather?"
     request_url = URL + f"q={city_name}&units=metric&appid={API_KEY}"
 
-    print("Request URL:", request_url)  # debugging
+    # debugging
+    print(API_KEY)
+    print("Request URL:", request_url)
     response = requests.get(request_url)
-
-    print("Response Status Code:", response.status_code)  # debugging
+    print("Response Status Code:", response.status_code)
 
     if response.status_code == 200:
         data = response.json()

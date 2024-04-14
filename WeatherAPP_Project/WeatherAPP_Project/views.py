@@ -1,6 +1,6 @@
 from django.shortcuts import render
 from .forms import CityForm
-from .utils import get_weather_data  # Import your get_weather_data function
+from .utils import get_weather_data
 
 
 def weather(request):
@@ -8,7 +8,7 @@ def weather(request):
         form = CityForm(request.POST)
         if form.is_valid():
             city_name = form.cleaned_data['city']
-            weather_data = get_weather_data(city_name)  # Pass the city name as an argument
+            weather_data = get_weather_data(city_name)
             if weather_data:
                 context = {
                     'form': form,
