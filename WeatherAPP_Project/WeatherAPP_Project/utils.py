@@ -6,7 +6,9 @@ import requests
 def get_weather_data(city_name):
     
     # TODO: fix api key not loading in
-    load_dotenv('.env')
+    # Strange because this method works in all other projects
+
+    load_dotenv('/DjangoWeatherAPP/WeatherAPP_Project/WeatherAPP_Project/.env')
     API_KEY = os.getenv('WEATHER')
     print(f"api key: {API_KEY}")
 
